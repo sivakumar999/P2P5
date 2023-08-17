@@ -10,7 +10,7 @@ create table Bank.Customer
 CName nvarchar(50) not null,
 CEmail nvarchar(100) not null unique,
 Contact nvarchar(20) not null unique,
-CPwd AS right(CName, 2) + convert(nvarchar(10),CId) + left(Contact, 2) persisted
+CPwd as right(CName, 2) + convert(nvarchar(10),CId) + left(Contact, 2) persisted
 )
 
 create table Bank.MailInfo 
